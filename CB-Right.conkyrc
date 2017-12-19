@@ -1,16 +1,4 @@
-# For commands above TEXT check:
-# http://conky.sourceforge.net/config_settings.html
-#
-# For commands available below TEXT check:
-# http://conky.sourceforge.net/variables.html
-
-# Bunsen Labs Conky help threads
-# http://crunchbang.org/forums/viewtopic.php?pid=371424#p371424
-
-# beta tested by: smacz
-# Enjoy! :)
-
-# pkill -xf "conky -c $HOME/.config/conky/CB-Right.conkyrc" &
+#BUNSENLABS CONKY MODIFIED AND EXTENDED BY BIPRODEEP ROY.
 ###  Begin Window Settings  #####################
 own_window yes
 own_window_type normal
