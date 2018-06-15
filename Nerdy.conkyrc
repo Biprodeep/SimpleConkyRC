@@ -32,7 +32,7 @@ override_utf8_locale yes
 
 uppercase no
 #########################  End Font Settings  ###
-###  Color Settings  ##########################
+###  Color Settings  ###########################
 draw_shades no #yes
 default_shade_color 000000
 
@@ -127,15 +127,14 @@ ${color1}Core 1       ${cpu cpu1}% ${alignr}|Core 2    ${cpu cpu2}%
 ${color1}${cpugraph cpu1 25,140 00ff00 00ff00} ${color1} $alignr${color1}${cpugraph cpu2 25,140 00ff00 00ff00}
 ${color1}Core 3       ${cpu cpu3}% ${alignr}|Core 4    ${cpu cpu4}%
 ${color1}${cpugraph cpu3 25,140 00ff00 00ff00} ${color1} $alignr${color1}${cpugraph cpu4 25,140 00ff00 00ff00}
-${color2}Download ${color0}${alignr}${downspeedf wlp0s29u1u2} KiB/s
-### Add your main network ports in place of "wlp0s29u1u2" to obtain your network stats.
-${color red}${downspeedgraph wlp0s29u1u2 20,}
+${color2}Download ${color0}${alignr}${downspeedf wlp0s29u1u2} KiB/s ##### Add your own suitable network ports here in place of "wlp0s29u1u2"
+
+${color red}${downspeedgraph wlp0s29u1u2 20,250}
 ${color2}Upload ${color0}${alignr}${upspeedf wlp0s29u1u2} KiB/s 
 ${color red}${upspeedgraph wlp0s29u1u2 20,}
 ##Comment out the next two lines if you want your local and public IP to be displayed.
 ##${color2}Local${color0}${alignr}${addrs}
-##${color2}Public${color0}${alignr} ${execi 3600 wget -q -O  /dev/stdout http://checkip.dyndns.org/ | cut -d : -f 2- | cut -d \< -f -1}    
-
+##${color2}Public${color0}${alignr} ${execi 3600 wget -q -O  /dev/stdout http://checkip.dyndns.org/ | cut -d : -f 2- | cut -d \< -f -1}  
 ${color1}$hr
 ${color1}File systems:
  / ${fs_used /}/${fs_size /}${alignr}${fs_free_perc /}% free
