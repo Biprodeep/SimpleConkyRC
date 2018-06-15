@@ -32,7 +32,7 @@ override_utf8_locale yes
 
 uppercase no
 #########################  End Font Settings  ###
-###  Color Settings  ############################
+###  Color Settings  ###########################
 draw_shades no #yes
 default_shade_color 000000
 
