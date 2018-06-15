@@ -1,0 +1,279 @@
+{
+    "always_on_top": false, 
+    "angel": 0, 
+    "app_indicator_fix_size": false, 
+    "app_indicator_size": 22, 
+    "app_lang": "auto", 
+    "appid": "547bbdc38bd641bef6645cd2c4bc613f", 
+    "appid_openweathermap": "547bbdc38bd641bef6645cd2c4bc613f", 
+    "bg_custom": "\u041d\u0435\u0442", 
+    "bg_height": -1, 
+    "bg_left": 0, 
+    "bg_top": 0, 
+    "bg_width": -1, 
+    "block_add_info_left": 70, 
+    "block_h_offset": 12, 
+    "block_icons_left": 0, 
+    "block_icons_top": 0, 
+    "block_moonrise": {
+        "align": "right", 
+        "font_size": 9, 
+        "show": true, 
+        "x": 30, 
+        "y": 100
+    }, 
+    "block_now_left": 0, 
+    "block_sunrise": {
+        "align": "left", 
+        "font_size": 9, 
+        "show": true, 
+        "x": 30, 
+        "y": 100
+    }, 
+    "block_today_left": -310, 
+    "block_today_top": 0, 
+    "block_tomorrow_left": 180, 
+    "block_tomorrow_top": 0, 
+    "block_wind_direct_left": -170, 
+    "block_wind_direct_small_left": 0, 
+    "block_wind_direct_small_top": 0, 
+    "check_for_updates": 0, 
+    "city_id": "1275004", 
+    "city_list_accuweather": [
+        "in/bally/3196358,3196358;Bally"
+    ], 
+    "city_list_gismeteo": [
+        "5687;Bally"
+    ], 
+    "city_list_openweathermap": [
+        "1275004;Kolkata", 
+        "1275004;Kolkata"
+    ], 
+    "city_name_attr": {
+        "align": "center", 
+        "font_size": 14, 
+        "font_weight": " Bold", 
+        "show": true, 
+        "x": 0, 
+        "y": 0
+    }, 
+    "city_name_custom": "", 
+    "color_bg": [
+        0.0, 
+        0.0, 
+        0.0, 
+        0.39145494773785006
+    ], 
+    "color_high_wind": [
+        0.5, 
+        0.5, 
+        1, 
+        1
+    ], 
+    "color_scheme_number": 1, 
+    "color_shadow": [
+        0, 
+        0, 
+        0, 
+        0.7
+    ], 
+    "color_text": [
+        0.9, 
+        0.9, 
+        0.9, 
+        1
+    ], 
+    "color_text_week": [
+        1, 
+        0.5, 
+        0.5, 
+        1
+    ], 
+    "custom_text1_attr": {
+        "align": "left", 
+        "font_size": 9, 
+        "font_weight": " Bold", 
+        "show": false, 
+        "text": "Now", 
+        "x": 65, 
+        "y": 3
+    }, 
+    "date_separator": "-", 
+    "day_date_attr": {
+        "align": "left", 
+        "font_size": 9, 
+        "font_weight": " Bold", 
+        "show": true, 
+        "x": 0, 
+        "y": -2
+    }, 
+    "day_date_fmt": "{day}, {date}", 
+    "day_icon_attr": {
+        "show": true, 
+        "size": 36, 
+        "x": 30, 
+        "y": 16
+    }, 
+    "day_left": 0, 
+    "day_top": 0, 
+    "delay_start_time": 0, 
+    "desc_style": 0, 
+    "draw_shadow": true, 
+    "fix_BadDrawable": true, 
+    "fix_position": true, 
+    "font": "Sans", 
+    "height_fix": 0, 
+    "high_wind": 10, 
+    "icon_now_attr": {
+        "show": true, 
+        "size": 80, 
+        "x": 0, 
+        "y": 30
+    }, 
+    "icons_menu_name": "default", 
+    "icons_name": "flat_colorful", 
+    "indicator_color_shadow": [
+        1, 
+        1, 
+        1, 
+        0.7
+    ], 
+    "indicator_color_text": [
+        0, 
+        0, 
+        0, 
+        1
+    ], 
+    "indicator_draw_shadow": true, 
+    "indicator_font": "Sans", 
+    "indicator_font_size": 9, 
+    "indicator_icons_name": "default", 
+    "indicator_is_appindicator": 1, 
+    "indicator_top": 0, 
+    "indicator_width": 10, 
+    "instances_count": 0, 
+    "margin": 0, 
+    "max_days": 15, 
+    "max_try_show": 30, 
+    "n": 7, 
+    "opacity": 0.0, 
+    "pipe1": {
+        "active": false, 
+        "path": "/home/gh0st/.config/gis-weather/pipe1", 
+        "text": "{t_now}"
+    }, 
+    "pipe2": {
+        "active": false, 
+        "path": "/home/gh0st/.config/gis-weather/pipe2", 
+        "text": "{t_now}"
+    }, 
+    "pipe3": {
+        "active": false, 
+        "path": "/home/gh0st/.config/gis-weather/pipe3", 
+        "text": "{t_now}"
+    }, 
+    "preset_number": 0, 
+    "press_units": 0, 
+    "r": 0, 
+    "save_cur_data_path": "", 
+    "save_cur_icon": false, 
+    "save_cur_temp": false, 
+    "save_cur_temp_add_scale": false, 
+    "save_cur_temp_to_pipe": true, 
+    "save_weather": false, 
+    "save_weather_fmt": "", 
+    "save_weather_path": "", 
+    "scale": 0.8400000000000001, 
+    "service": "OpenWeatherMap", 
+    "show_bg_png": false, 
+    "show_block_add_info": true, 
+    "show_block_moonrise": true, 
+    "show_block_sunrise": true, 
+    "show_block_today": true, 
+    "show_block_tomorrow": true, 
+    "show_block_wind_direct": true, 
+    "show_chance_of_rain": true, 
+    "show_indicator": 0, 
+    "show_indicator_text": true, 
+    "show_splash_screen": 1, 
+    "show_sunrise": true, 
+    "show_time_receive": true, 
+    "splash_block_top": 0, 
+    "splash_icon_top": 0, 
+    "splash_version_top": 0, 
+    "sticky": true, 
+    "swap_d_and_m": false, 
+    "t_attr": {
+        "align": "left", 
+        "font_size": 10, 
+        "font_weight": " Normal", 
+        "show": true, 
+        "x": 0, 
+        "y": 15
+    }, 
+    "t_feel": true, 
+    "t_fmt": "{t_day}\n{t_night}", 
+    "t_now_attr": {
+        "align": "right", 
+        "font_size": 18, 
+        "font_weight": " Normal", 
+        "show": true, 
+        "x": 0, 
+        "y": 30
+    }, 
+    "t_now_fmt": "{t_now}", 
+    "t_scale": 0, 
+    "text_attr": {
+        "align": "left", 
+        "font_size": 7, 
+        "show": true, 
+        "x": 0, 
+        "y": 55
+    }, 
+    "text_file1": {
+        "active": false, 
+        "path": "/home/gh0st/.config/gis-weather/text_file1", 
+        "text": "{t_now}"
+    }, 
+    "text_file2": {
+        "active": false, 
+        "path": "/home/gh0st/.config/gis-weather/text_file2", 
+        "text": "{t_now}"
+    }, 
+    "text_file3": {
+        "active": false, 
+        "path": "/home/gh0st/.config/gis-weather/text_file3", 
+        "text": "{t_now}"
+    }, 
+    "text_now_attr": {
+        "align": "center", 
+        "font_size": 10, 
+        "font_weight": " Normal", 
+        "show": true, 
+        "x": 0, 
+        "y": 0
+    }, 
+    "time_of_day_gradient": true, 
+    "tooltip_fmt": "", 
+    "tooltip_show": true, 
+    "type_hint": 0, 
+    "upd_time": 60, 
+    "weather_lang": "ua/ru", 
+    "weather_menu": false, 
+    "weather_menu_n": 3, 
+    "weekend": "Sa, Su", 
+    "width_fix": 0, 
+    "wind_attr": {
+        "align": "left", 
+        "font_size": 8, 
+        "font_weight": " Normal", 
+        "show": true, 
+        "x": 0, 
+        "y": 50
+    }, 
+    "wind_direct_small": false, 
+    "wind_fmt": "{wind_direct}, {wind_speed}", 
+    "wind_units": 0, 
+    "x_pos": 430, 
+    "y_pos": 0
+}

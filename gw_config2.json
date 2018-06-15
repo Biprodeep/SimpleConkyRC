@@ -1,0 +1,271 @@
+{
+    "always_on_top": false, 
+    "angel": 0, 
+    "app_indicator_fix_size": false, 
+    "app_indicator_size": 22, 
+    "app_lang": "auto", 
+    "appid": "", 
+    "bg_custom": "Нет", 
+    "bg_height": 145, 
+    "bg_left": 0, 
+    "bg_top": 0, 
+    "bg_width": -1, 
+    "block_add_info_left": 70, 
+    "block_h_offset": -5, 
+    "block_icons_left": 49, 
+    "block_icons_top": 30, 
+    "block_moonrise": {
+        "align": "right", 
+        "font_size": 9, 
+        "show": true, 
+        "x": 30, 
+        "y": 100
+    }, 
+    "block_now_left": -125, 
+    "block_sunrise": {
+        "align": "left", 
+        "font_size": 9, 
+        "show": true, 
+        "x": 30, 
+        "y": 100
+    }, 
+    "block_today_left": -310, 
+    "block_today_top": 0, 
+    "block_tomorrow_left": 180, 
+    "block_tomorrow_top": 0, 
+    "block_wind_direct_left": -170, 
+    "block_wind_direct_small_left": 0, 
+    "block_wind_direct_small_top": 0, 
+    "check_for_updates": 0, 
+    "city_id": "in/bally/3196358,3196358", 
+    "city_list_accuweather": [
+        "in/bally/3196358,3196358;Bally"
+    ], 
+    "city_list_gismeteo": [
+        "5687;Bally"
+    ], 
+    "city_name_attr": {
+        "align": "left", 
+        "font_size": 11, 
+        "font_weight": " Normal", 
+        "show": true, 
+        "x": 164, 
+        "y": -18
+    }, 
+    "city_name_custom": "", 
+    "color_bg": [
+        1.0, 
+        1.0, 
+        1.0, 
+        0.0
+    ], 
+    "color_high_wind": [
+        0, 
+        0, 
+        0.6, 
+        1
+    ], 
+    "color_scheme_number": 0, 
+    "color_shadow": [
+        1.0, 
+        1.0, 
+        1.0, 
+        0.0
+    ], 
+    "color_text": [
+        0, 
+        0, 
+        0, 
+        1
+    ], 
+    "color_text_week": [
+        0.5, 
+        0, 
+        0, 
+        1
+    ], 
+    "custom_text1_attr": {
+        "align": "left", 
+        "font_size": 9, 
+        "font_weight": " Bold", 
+        "show": true, 
+        "text": "Now", 
+        "x": 40, 
+        "y": 3
+    }, 
+    "date_separator": "-", 
+    "day_date_attr": {
+        "align": "center", 
+        "font_size": 9, 
+        "font_weight": " Bold", 
+        "show": true, 
+        "x": 0, 
+        "y": -2
+    }, 
+    "day_date_fmt": "{day}", 
+    "day_icon_attr": {
+        "size": 36, 
+        "x": 22, 
+        "y": 16
+    }, 
+    "day_left": 0, 
+    "day_top": -75, 
+    "delay_start_time": 0, 
+    "desc_style": 0, 
+    "draw_shadow": false, 
+    "fix_BadDrawable": true, 
+    "fix_position": true, 
+    "font": "Sans", 
+    "height_fix": -180, 
+    "high_wind": 10, 
+    "icon_now_attr": {
+        "show": true, 
+        "size": 36, 
+        "x": 1200, 
+        "y": 21
+    }, 
+    "icons_menu_name": "default", 
+    "icons_name": "default", 
+    "indicator_color_shadow": [
+        1, 
+        1, 
+        1, 
+        0.7
+    ], 
+    "indicator_color_text": [
+        0, 
+        0, 
+        0, 
+        1
+    ], 
+    "indicator_draw_shadow": true, 
+    "indicator_font": "Sans", 
+    "indicator_font_size": 9, 
+    "indicator_icons_name": "default", 
+    "indicator_is_appindicator": 0, 
+    "indicator_top": 0, 
+    "indicator_width": 30, 
+    "instances_count": 0, 
+    "margin": 20, 
+    "max_days": 14, 
+    "max_try_show": 30, 
+    "n": 3, 
+    "opacity": 1.0, 
+    "pipe1": {
+        "active": false, 
+        "path": "/home/gh0st/.config/gis-weather/pipe1", 
+        "text": "{t_now}"
+    }, 
+    "pipe2": {
+        "active": false, 
+        "path": "/home/gh0st/.config/gis-weather/pipe2", 
+        "text": "{t_now}"
+    }, 
+    "pipe3": {
+        "active": false, 
+        "path": "/home/gh0st/.config/gis-weather/pipe3", 
+        "text": "{t_now}"
+    }, 
+    "preset_number": 7, 
+    "press_units": 0, 
+    "r": 0, 
+    "save_cur_data_path": "", 
+    "save_cur_icon": false, 
+    "save_cur_temp": false, 
+    "save_cur_temp_add_scale": false, 
+    "save_cur_temp_to_pipe": true, 
+    "save_weather": false, 
+    "save_weather_fmt": "", 
+    "save_weather_path": "", 
+    "scale": 0.94, 
+    "service": "AccuWeather", 
+    "show_bg_png": false, 
+    "show_block_add_info": false, 
+    "show_block_moonrise": true, 
+    "show_block_sunrise": true, 
+    "show_block_today": false, 
+    "show_block_tomorrow": false, 
+    "show_block_wind_direct": false, 
+    "show_chance_of_rain": true, 
+    "show_indicator": 0, 
+    "show_indicator_text": true, 
+    "show_splash_screen": 0, 
+    "show_sunrise": true, 
+    "show_time_receive": true, 
+    "splash_block_top": 0, 
+    "splash_icon_top": 68, 
+    "splash_version_top": -10, 
+    "sticky": true, 
+    "swap_d_and_m": false, 
+    "t_attr": {
+        "align": "center", 
+        "font_size": 10, 
+        "font_weight": " Normal", 
+        "show": true, 
+        "x": 0, 
+        "y": 55
+    }, 
+    "t_feel": true, 
+    "t_fmt": "<span size='x-small'>{t_night}</span> <span size='large'>{t_day}</span>", 
+    "t_now_attr": {
+        "align": "center", 
+        "font_size": 10, 
+        "font_weight": " Normal", 
+        "show": true, 
+        "x": 1248, 
+        "y": 60
+    }, 
+    "t_now_fmt": "<span size='large'>{t_now}</span>\n<span size='x-small'>{wind_direct_now}  {wind_speed_now} {wind_units_now}</span>", 
+    "t_scale": 0, 
+    "text_attr": {
+        "align": "left", 
+        "font_size": 7, 
+        "show": false, 
+        "x": 0, 
+        "y": 55
+    }, 
+    "text_file1": {
+        "active": false, 
+        "path": "/home/gh0st/.config/gis-weather/text_file1", 
+        "text": "{t_now}"
+    }, 
+    "text_file2": {
+        "active": false, 
+        "path": "/home/gh0st/.config/gis-weather/text_file2", 
+        "text": "{t_now}"
+    }, 
+    "text_file3": {
+        "active": false, 
+        "path": "/home/gh0st/.config/gis-weather/text_file3", 
+        "text": "{t_now}"
+    }, 
+    "text_now_attr": {
+        "align": "center", 
+        "font_size": 10, 
+        "font_weight": " Normal", 
+        "show": false, 
+        "x": 1161, 
+        "y": 9
+    }, 
+    "tooltip_fmt": "", 
+    "tooltip_show": true, 
+    "type_hint": 0, 
+    "upd_time": 60, 
+    "weather_lang": "en", 
+    "weather_menu": false, 
+    "weekend": "Sa, Su", 
+    "width_fix": 20, 
+    "wind_attr": {
+        "align": "center", 
+        "font_size": 8, 
+        "font_weight": " Normal", 
+        "show": true, 
+        "x": 0, 
+        "y": 73
+    }, 
+    "wind_direct_small": false, 
+    "wind_fmt": "<span size='small'>{wind_direct}  {wind_speed}</span>", 
+    "wind_units": 0, 
+    "x_pos": 503, 
+    "y_pos": 20
+}
