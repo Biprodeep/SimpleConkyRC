@@ -123,9 +123,9 @@ ${color1}Frequency (in GHz): $freq_g GHz
 ${execi 1000 cat /proc/cpuinfo | grep 'model name' | sed -e 's/model name.*: //'| uniq}
 ${color1}Average CPU Usage: $cpu%
 ${cpugraph cpu0 00ff00 00ff00}
-${color1}Core 1       ${cpu cpu1}% ${alignr}Core 2        ${cpu cpu2}%
+${color1}Core 1       ${cpu cpu1}% ${alignr}|Core 2    ${cpu cpu2}%
 ${color1}${cpugraph cpu1 25,140 00ff00 00ff00} ${color1} $alignr${color1}${cpugraph cpu2 25,140 00ff00 00ff00}
-${color1}Core 3       ${cpu cpu3}% ${alignr}Core 4        ${cpu cpu4}%
+${color1}Core 3       ${cpu cpu3}% ${alignr}|Core 4    ${cpu cpu4}%
 ${color1}${cpugraph cpu3 25,140 00ff00 00ff00} ${color1} $alignr${color1}${cpugraph cpu4 25,140 00ff00 00ff00}
 ${color2}Download ${color0}${alignr}${downspeedf wlp0s29u1u2} KiB/s
 ### Add your main network ports in place of "wlp0s29u1u2" to obtain your network stats.
