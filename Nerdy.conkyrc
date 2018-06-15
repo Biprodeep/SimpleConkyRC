@@ -128,6 +128,7 @@ ${color1}${cpugraph cpu1 25,140 00ff00 00ff00} ${color1} $alignr${color1}${cpugr
 ${color1}Core 3       ${cpu cpu3}% ${alignr}Core 4        ${cpu cpu4}%
 ${color1}${cpugraph cpu3 25,140 00ff00 00ff00} ${color1} $alignr${color1}${cpugraph cpu4 25,140 00ff00 00ff00}
 ${color2}Download ${color0}${alignr}${downspeedf wlp0s29u1u2} KiB/s
+### Add your main network ports in place of "wlp0s29u1u2" to obtain your network stats.
 ${color red}${downspeedgraph wlp0s29u1u2 20,}
 ${color2}Upload ${color0}${alignr}${upspeedf wlp0s29u1u2} KiB/s 
 ${color red}${upspeedgraph wlp0s29u1u2 20,}
