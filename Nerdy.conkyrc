@@ -1,3 +1,7 @@
+############################################################
+# Nerdy Conky Config Coded by Purnomo Hadi & Biprodeep Roy #
+############################################################
+
 ###  Begin Window Settings  #####################
 own_window yes
 own_window_type normal
@@ -5,7 +9,7 @@ own_window_transparent yes
 own_window_hints undecorated,below,skip_taskbar,skip_pager,sticky
 own_window_colour 000000
 own_window_class Conky
-own_window_title Bunsen Labs CB Right Conky
+own_window_title Nerdy Conky by Biprodeep Roy & Purnomo Hadi
 
 minimum_size 200 0  ### width | height
 maximum_width 240
