@@ -1,0 +1,162 @@
+############################################################
+# Nerdy Conky Config Coded by Purnomo Hadi & Biprodeep Roy #
+############################################################
+
+###  Begin Window Settings  #####################
+own_window yes
+own_window_type normal
+own_window_transparent yes
+own_window_hints undecorated,below,skip_taskbar,skip_pager,sticky
+own_window_colour 000000
+own_window_class Conky
+own_window_title Nerdy Conky by Biprodeep Roy & Purnomo Hadi
+
+minimum_size 200 0  ### width | height
+maximum_width 240
+
+alignment top_right
+gap_x 0 #right
+gap_y 0 #left
+
+###  Font Settings  #############################
+# Use Xft (anti-aliased font and stuff)
+use_xft yes
+#xftfont Liberation Mono:bold:size=10
+#xftfont Liberation Sans:bold:size=10
+xftfont Roboto Mono Medium for Powerline:bold:size=10
+
+# Alpha of Xft font. Must be a value at or between 1 and 0
+xftalpha 1
+# Force UTF8? requires XFT ###
+override_utf8_locale yes
+
+uppercase no
+#########################  End Font Settings  ###
+###  Color Settings  ###########################
+draw_shades no #yes
+default_shade_color 000000
+
+draw_outline no # amplifies text if yes
+default_outline_color 000000
+
+#default_color 656667 # Waldorf original colour
+#default_color 7a7a7a # Flame  & Bunsen Grey
+#default_color 929292 # Labs Grey
+default_color C0C0C0 # Silver
+#color0 B0E0E6 # PowderBlue
+#color1 778899 # LightSlateGray
+#color2 D8BFD8 # Thistle
+#color3 9ACD32 # YellowGreen
+#color4 FFA07A # LightSalmon
+#color5 FFDEAD # NavajoWhite
+#color6 00BFFF # DeepSkyBlue
+#color7 5F9EA0 # CadetBlue
+#color8 BDB76B # DarkKhaki
+#color9 CD5C5C # IndianRed
+color0 00BFFF
+color1 cyan
+color2 cyan
+color3 green
+#######################  End Colour Settings  ###
+###  Borders Section  ###########################
+draw_borders no
+# Stippled borders?
+stippled_borders 5
+# border margins
+border_inner_margin 5
+border_outer_margin 0
+# border width
+border_width 2
+# graph borders
+draw_graph_borders no
+#default_graph_size 15 40
+#######################  End Borders Section  ###
+###  Miscellaneous Section  #####################
+# Boolean value, if true, Conky will be forked to background when started.
+background yes
+
+# Adds spaces around certain objects to stop them from moving other things
+# around, this only helps if you are using a mono font
+# Options: right, left or none
+use_spacer none
+
+# Default and Minimum size is 256 - needs more for single commands that
+# "call" a lot of text IE: bash scripts
+#text_buffer_size 6144
+
+# Subtract (file system) buffers from used memory?
+no_buffers yes
+
+# change GiB to G and MiB to M
+short_units yes
+
+# Like it says, ot pads the decimals on % values
+# doesn't seem to work since v1.7.1
+pad_percents 2
+
+# Imlib2 image cache size, in bytes. Default 4MiB Increase this value if you use
+# $image lots. Set to 0 to disable the image cache.
+imlib_cache_size 0
+
+# Use the Xdbe extension? (eliminates flicker)
+# It is highly recommended to use own window with this one
+# so double buffer won't be so big.
+double_buffer yes
+
+#   Maximum size of user text buffer, i.e. layout below TEXT line in config file
+#  (default is 16384 bytes)
+# max_user_text 16384
+
+# Desired output unit of all objects displaying a temperature. Parameters are
+# either "fahrenheit" or "celsius". The default unit is degree Celsius.
+# temperature_unit Fahrenheit
+
+#################  End Miscellaneous Section  ###
+
+update_interval 0.1
+TEXT
+${color 00BFFF}$sysname ${execi "uname -r | cut -c1-8"}  ${alignr}$nodename
+${color1}$hr
+${color 00BFFF}${time %a,} ${time %e %B %G}${alignr}${time %H:%M:%S %Z}
+${color1}$hr
+${color1}Frequency (in GHz): $freq_g GHz
+${execi 1000 cat /proc/cpuinfo | grep 'model name' | sed -e 's/model name.*: //'| uniq}
+${color1}$hr
+${color1}Average CPU Usage: $cpu%
+${cpugraph cpu0 00ff00 00ff00}
+${color1}Core 1       ${cpu cpu1}% ${alignr}|Core 2    ${cpu cpu2}%
+${color1}${cpugraph cpu1 25,140 00ff00 00ff00} ${color1} $alignr${color1}${cpugraph cpu2 25,140 00ff00 00ff00}
+${color1}${execi 15 sensors | grep "Core 0" | cut -c 17-23}$alignr${execi 15 sensors | grep "Core 1" | cut -c 17-23}
+${color1}$hr
+${color1}Core 3       ${cpu cpu3}% ${alignr}|Core 4    ${cpu cpu4}%
+${color1}${cpugraph cpu3 25,140 00ff00 00ff00} ${color1} $alignr${color1}${cpugraph cpu4 25,140 00ff00 00ff00}
+${color1}${execi 15 sensors | grep "Core 2" | cut -c 17-23}$alignr${execi 15 sensors | grep "Core 3" | cut -c 17-23}
+${color1}$hr
+${color2}Download ${color0}${alignr}${downspeedf wlp3s0} KiB/s ##### Add your own suitable network ports here in place of "wlp3s0"
+
+${color red}${downspeedgraph wlp3s0 20,250}
+${color2}Upload ${color0}${alignr}${upspeedf wlp3s0} KiB/s 
+${color red}${upspeedgraph wlp3s0 20,}
+##Comment out the next two lines if you want your local and public IP to be displayed.
+##${color2}Local${color0}${alignr}${addrs}
+##${color2}Public${color0}${alignr} ${execi 3600 wget -q -O  /dev/stdout http://checkip.dyndns.org/ | cut -d : -f 2- | cut -d \< -f -1}  
+${color1}$hr
+${color1}File systems:
+ / ${fs_used /}/${fs_size /}${alignr}${fs_free_perc /}% free
+ ${fs_bar 6 /} 
+Top${hr}
+${color1}Processes: $processes ${alignr}Running: $running_processes
+${color1}RAM Usage: $mem/$memmax - $memperc% ${membar 4}
+${color1}Swap Usage: $swap/$swapmax - $swapperc% ${swapbar 4}
+${hr}
+Host:${alignr}${nodename}
+Uptime:${alignr}${uptime}
+RAM:$alignr${mem} / ${memmax}
+Root usage:$alignr${fs_used /} / ${fs_size /}
+Home usage: $alignr${fs_used /home} /${fs_size /home}
+${hr}
+CPU Fan: $alignr${execi 15 sensors | grep -A 0 'fan2' | cut -c 24-28}RPM
+GPU PROC:${alignr}${execi 15 nvidia-settings -q GPUCurrentClockFreqs | grep gpu:0 | grep -o '[[:digit:]]*','[[:digit:]]*'} MHz
+GMEM:${alignr}${execi 15 nvidia-smi --query-gpu=memory.used --format=csv,noheader} / ${execi 15 nvidia-smi --query-gpu=memory.total --format=csv,noheader}
+GPU Temperatures:
+GPU 1:${alignr}${execi 15 nvidia-smi --query-gpu=temperature.gpu --format=csv,noheader} °C
